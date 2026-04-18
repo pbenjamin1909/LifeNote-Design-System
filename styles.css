@@ -746,4 +746,34 @@ h2 {
     margin-top: 12px;
     display: block;
   }
+  /* ===== FIX GRID FOR GUIDELINE PAGES ===== */
+
+  /* Force same layout as Buttons page */
+  .button-grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 24px !important;
+    align-items: start;
+  }
+
+  /* Make sure cards don’t stretch weird */
+  .content-card {
+    width: 100%;
+  }
+
+  /* Keep images from blowing up layout */
+  .guideline-image {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    display: block;
+    margin-top: 12px;
+  }
+
+  /* Mobile fix (stack on small screens) */
+  @media (max-width: 768px) {
+    .button-grid {
+      grid-template-columns: 1fr !important;
+    }
+  }
 }
