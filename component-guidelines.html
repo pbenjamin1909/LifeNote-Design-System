@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LifeNote Design System | Cards</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="top-nav">
+      <div class="nav-container">
+        <div class="logo">
+          <a href="index.html">LifeNote Design System</a>
+        </div>
+
+        <nav class="main-nav">
+          <a href="index.html">Home</a>
+          <a href="foundation-guidelines.html">Foundations</a>
+          <a href="component-guidelines.html">Components</a>
+          <a href="buttons.html">Buttons</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero hero-small">
+      <div class="hero-content">
+        <p class="eyebrow">Components</p>
+        <h1>Cards</h1>
+        <p>
+          Reusable content containers used to group related information and
+          actions across the LifeNote interface.
+        </p>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <div class="page-width button-layout">
+        <aside class="sidebar">
+          <h3>Components</h3>
+          <a href="buttons.html">Buttons</a>
+          <a class="active-link" href="component-guidelines.html">Cards</a>
+          <a href="#">Inputs</a>
+          <a href="#">Navigation</a>
+        </aside>
+
+        <div class="main-content">
+          <h2>Overview</h2>
+
+          <div class="button-grid">
+            <article class="content-card">
+              <h3>Structure</h3>
+              <ul>
+                <li>Title</li>
+                <li>Supporting text</li>
+                <li>Optional action button</li>
+                <li>Consistent spacing and padding</li>
+              </ul>
+            </article>
+
+            <article class="content-card">
+              <h3>Best Practices</h3>
+              <ul>
+                <li>Keep content short and scannable.</li>
+                <li>Use clear hierarchy from title to action.</li>
+                <li>Maintain consistent spacing inside the card.</li>
+                <li>Avoid overcrowding with too much content.</li>
+              </ul>
+            </article>
+
+            <article class="content-card code-card">
+              <h3>Usage Example</h3>
+              <img
+                src="images/card-example.png"
+                alt="LifeNote card example"
+                class="guideline-image"
+              />
+            </article>
+
+            <article class="content-card">
+              <h3>Purpose</h3>
+              <p>
+                Cards group related content such as journal entries,
+                reflections, and insights into clean, reusable content blocks.
+              </p>
+              <p>
+                This helps create a more structured and readable interface while
+                supporting a consistent system across screens.
+              </p>
+            </article>
+
+            <article class="content-card">
+              <h3>Usage</h3>
+              <p>Use cards to separate related content into clear sections.</p>
+              <p>
+                Use cards when content needs supporting text and an optional
+                action.
+              </p>
+              <p>Keep card content focused, readable, and visually balanced.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
