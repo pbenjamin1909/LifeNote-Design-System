@@ -75,53 +75,32 @@
             </article>
 
             <article class="content-card full-span">
-              <h3>Input Examples</h3>
+              <h3>Input States</h3>
+
               <div class="form-demo">
-                <label for="entry-title">Entry Title</label>
-                <input
-                  id="entry-title"
-                  type="text"
-                  placeholder="Name your reflection"
-                />
-                
+                <!-- Normal Input -->
+                <div class="input-group">
+                  <label for="normal">Normal Input</label>
+                  <input
+                    id="normal"
+                    type="text"
+                    placeholder="Enter text here"
+                  />
+                </div>
 
-                <label for="entry-search">Search Entries</label>
-                <input
-                  id="entry-search"
-                  type="search"
-                  placeholder="Search by keyword"
-                />
-
-                <label for="entry-note">Journal Prompt</label>
-                <textarea
-                  id="entry-note"
-                  placeholder="What are you reflecting on today?"
-                ></textarea>
-                <article class="content-card full-span">
-  <h3>Input States</h3>
-
-  <div class="form-demo">
-
-    <!-- Normal Input -->
-    <div class="input-group">
-      <label for="normal">Normal Input</label>
-      <input id="normal" type="text" placeholder="Enter text here" />
-    </div>
-
-    <!-- Error Input -->
-    <div class="input-group">
-      <label for="error">Email</label>
-      <input
-        id="error"
-        type="email"
-        class="input-error"
-        placeholder="Enter your email"
-      />
-      <span class="error-text">Please enter a valid email address.</span>
-    </div>
-
-  </div>
-</article>
+                <!-- Error Input -->
+                <div class="input-group">
+                  <label for="error">Email</label>
+                  <input
+                    id="error"
+                    type="email"
+                    class="input-error"
+                    placeholder="Enter your email"
+                  />
+                  <span class="error-text"
+                    >Please enter a valid email address.</span
+                  >
+                </div>
               </div>
             </article>
 
