@@ -28,11 +28,9 @@
   --shadow-md: 0 10px 24px rgba(15, 23, 42, 0.08);
 }
 
-/* ================= BASE ================= */
+/* ===== BASE ===== */
 
-* {
-  box-sizing: border-box;
-}
+* { box-sizing: border-box; }
 
 body {
   margin: 0;
@@ -41,23 +39,19 @@ body {
   color: var(--text-body);
 }
 
-h1,
-h2,
-h3 {
+h1, h2, h3 {
   font-family: var(--font-heading);
   color: var(--text-main);
 }
 
-p {
-  line-height: 1.6;
-}
+p { line-height: 1.6; }
 
 a {
   text-decoration: none;
   color: inherit;
 }
 
-/* ================= NAV ================= */
+/* ===== NAV ===== */
 
 .top-nav {
   background: var(--bg-nav);
@@ -66,7 +60,7 @@ a {
 
 .nav-container {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: auto;
   padding: 18px 32px;
   display: flex;
   justify-content: space-between;
@@ -81,7 +75,7 @@ a {
   color: var(--primary);
 }
 
-/* ================= HERO ================= */
+/* ===== HERO ===== */
 
 .hero {
   background: var(--bg-hero);
@@ -93,7 +87,7 @@ a {
   margin-bottom: 10px;
 }
 
-/* ================= LAYOUT ================= */
+/* ===== LAYOUT ===== */
 
 .page-width {
   max-width: 1200px;
@@ -113,10 +107,10 @@ a {
   gap: 32px;
 }
 
-/* ================= SIDEBAR ================= */
+/* ===== SIDEBAR ===== */
 
 .sidebar {
-  background: #ffffff80;
+  background: rgba(255,255,255,0.6);
   padding: 20px;
   border-radius: var(--radius-md);
   border: 1px solid var(--border);
@@ -133,10 +127,10 @@ a {
   color: var(--primary);
 }
 
-/* ================= CARDS ================= */
+/* ===== CARDS ===== */
 
 .content-card {
-  background: #ffffffcc;
+  background: rgba(255,255,255,0.85);
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
   padding: 28px;
@@ -147,7 +141,7 @@ a {
   grid-column: 1 / -1;
 }
 
-/* ================= BUTTONS ================= */
+/* ===== BUTTONS ===== */
 
 .btn {
   padding: 12px 18px;
@@ -181,7 +175,7 @@ a {
   background: transparent;
 }
 
-/* ================= CODE BLOCK ================= */
+/* ===== CODE ===== */
 
 .code-block {
   background: #0f172a;
@@ -192,7 +186,7 @@ a {
   font-family: monospace;
 }
 
-/* ================= FORM INPUTS ================= */
+/* ===== FORMS ===== */
 
 .form-demo {
   display: flex;
@@ -203,32 +197,36 @@ a {
 .input-group {
   display: flex;
   flex-direction: column;
+  margin-bottom: 16px;
 }
 
 .input-group label {
-  margin-bottom: 6px;
+  font-size: 14px;
   font-weight: 600;
+  margin-bottom: 6px;
+  color: var(--text-main);
 }
 
-/* DEFAULT INPUT */
 .form-demo input,
 .form-demo textarea {
   padding: 14px;
   border-radius: 10px;
   border: 1px solid var(--border);
   font-size: 15px;
+  background: white;
+  color: var(--text-body);
   transition: 0.2s;
 }
 
-/* FOCUS */
+/* Focus */
 .form-demo input:focus,
 .form-demo textarea:focus {
   outline: none;
   border-color: var(--primary);
-  box-shadow: 0 0 0 2px rgba(76, 110, 245, 0.2);
+  box-shadow: 0 0 0 2px rgba(76,110,245,0.2);
 }
 
-/* ================= 🔴 ERROR STATE ================= */
+/* 🔴 ERROR STATE */
 
 .input-error {
   border: 2px solid #ef4444 !important;
@@ -242,24 +240,35 @@ a {
 
 .input-error:focus {
   border-color: #dc2626 !important;
-  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.3);
+  box-shadow: 0 0 0 3px rgba(239,68,68,0.3);
 }
-
-/* ERROR TEXT */
 
 .error-text {
   font-size: 13px;
   color: #dc2626;
   margin-top: 6px;
-  font-weight: 600;
+  font-weight: 700;
 }
 
-/* ================= ICONS ================= */
+/* ===== COLORS ===== */
+
+.color-demo-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.color-demo {
+  height: 100px;
+  border-radius: var(--radius-md);
+}
+
+/* ===== ICONS ===== */
 
 .icon-demo-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 16px;
+  gap: 20px;
 }
 
 .icon-demo {
@@ -271,7 +280,7 @@ a {
   margin-bottom: 8px;
 }
 
-/* ================= RESPONSIVE ================= */
+/* ===== RESPONSIVE ===== */
 
 @media (max-width: 900px) {
   .button-layout {
@@ -280,5 +289,10 @@ a {
 
   .button-grid {
     grid-template-columns: 1fr;
+  }
+
+  .color-demo-grid,
+  .icon-demo-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
