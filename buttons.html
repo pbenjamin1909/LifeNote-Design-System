@@ -4,14 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LifeNote Design System | Buttons</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap"
       rel="stylesheet"
     />
+
     <link rel="stylesheet" href="styles.css" />
   </head>
+
   <body>
     <header class="top-nav">
       <div class="nav-container">
@@ -22,8 +25,10 @@
         <nav class="main-nav">
           <a href="index.html">Home</a>
           <a href="foundation-guidelines.html">Foundations</a>
-          <a href="component-guidelines.html">Components</a>
           <a href="buttons.html">Buttons</a>
+          <a href="component-guidelines.html">Cards</a>
+          <a href="inputs.html">Inputs</a>
+          <a href="navigation.html">Navigation</a>
         </nav>
       </div>
     </header>
@@ -35,7 +40,7 @@
           <h1>Buttons</h1>
           <p>
             Reusable button styles and interaction states for the LifeNote
-            interface
+            interface.
           </p>
         </div>
       </section>
@@ -46,76 +51,65 @@
             <h3>Components</h3>
             <a class="active-link" href="buttons.html">Buttons</a>
             <a href="component-guidelines.html">Cards</a>
-            <a href="#">Inputs</a>
-            <a href="#">Navigation</a>
+            <a href="inputs.html">Inputs</a>
+            <a href="navigation.html">Navigation</a>
           </aside>
 
           <section class="main-content">
             <h2>Overview</h2>
 
             <div class="button-grid">
-              <div class="content-card">
+              <article class="content-card full-span">
                 <h3>Variants</h3>
 
-                <div class="btn-outline-group">
-                  <div class="button-demo-row">
-                    <button class="btn btn-primary">New Entry</button>
-                    <button class="btn btn-primary">New Entry</button>
-                    <button class="btn btn-primary">New Entry</button>
-                    <button class="btn btn-primary" disabled>New Entry</button>
-                  </div>
+                <div class="button-demo-row">
+                  <button class="btn btn-primary">Primary</button>
+                  <button class="btn btn-secondary">Secondary</button>
+                  <button class="btn btn-accent">Accent</button>
+                  <button class="btn btn-ghost">Ghost</button>
                 </div>
+              </article>
 
-                <div class="btn-outline-group">
-                  <div class="button-demo-row">
-                    <button class="btn btn-secondary">New Entry</button>
-                    <button class="btn btn-secondary">New Entry</button>
-                    <button class="btn btn-secondary">New Entry</button>
-                    <button class="btn btn-secondary" disabled>
-                      New Entry
-                    </button>
-                  </div>
-                </div>
-
-                <div class="btn-outline-group">
-                  <div class="button-demo-row">
-                    <button class="btn btn-accent">New Entry</button>
-                    <button class="btn btn-accent">New Entry</button>
-                    <button class="btn btn-accent">New Entry</button>
-                    <button class="btn btn-accent" disabled>New Entry</button>
-                  </div>
-                </div>
-              </div>
-
-              <div class="content-card">
+              <article class="content-card">
                 <h3>States</h3>
+
                 <div class="button-demo-row">
                   <button class="btn btn-primary">Default</button>
-                  <button class="btn btn-primary">Hover</button>
-                  <button class="btn btn-primary">Pressed</button>
+                  <button class="btn btn-primary hover-demo">Hover</button>
+                  <button class="btn btn-primary pressed-demo">Pressed</button>
                   <button class="btn btn-primary" disabled>Disabled</button>
                 </div>
-              </div>
+              </article>
 
-              <div class="content-card">
+              <article class="content-card">
                 <h3>Purpose</h3>
                 <p>
-                  Buttons support major user actions across the app. These
-                  styles create consistency for actions like navigation, journal
-                  creation, and feature access. States included: default, hover,
-                  pressed, and disabled.
+                  Buttons support major user actions across the app, including
+                  journal creation, navigation, and feature access.
                 </p>
-              </div>
+              </article>
 
-              <div class="content-card tall-card">
+              <article class="content-card">
                 <h3>Usage</h3>
-                <p>Use primary buttons for the main action in a section.</p>
-                <p>Use secondary buttons for supporting actions.</p>
-                <p>Use accent buttons sparingly for emphasis.</p>
-                <p>Keep labels short and action-focused.</p>
-              </div>
-                </div>
-              </div>
+                <ul>
+                  <li>Use primary buttons for main actions.</li>
+                  <li>Use secondary buttons for supporting actions.</li>
+                  <li>Use accent buttons sparingly for emphasis.</li>
+                  <li>Keep labels short and action-focused.</li>
+                </ul>
+              </article>
+
+              <article class="content-card full-span">
+                <h3>Code Example</h3>
+                <span class="code-label">HTML</span>
+
+                <pre
+                  class="code-block"
+                ><code>&lt;button class="btn btn-primary"&gt;Primary&lt;/button&gt;
+&lt;button class="btn btn-secondary"&gt;Secondary&lt;/button&gt;
+&lt;button class="btn btn-accent"&gt;Accent&lt;/button&gt;
+&lt;button class="btn btn-ghost"&gt;Ghost&lt;/button&gt;</code></pre>
+              </article>
             </div>
           </section>
         </div>

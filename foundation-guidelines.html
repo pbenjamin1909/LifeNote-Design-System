@@ -12,13 +12,11 @@
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
+
   <body>
     <header class="top-nav">
       <div class="nav-container">
-        <div class="logo">
-          <a href="index.html">LifeNote Design System</a>
-        </div>
-
+        <div class="logo"><a href="index.html">LifeNote Design System</a></div>
         <nav class="main-nav">
           <a href="index.html">Home</a>
           <a href="foundation-guidelines.html">Foundations</a>
@@ -34,7 +32,7 @@
         <h1>Color</h1>
         <p>
           Reusable color guidelines for hierarchy, readability, and consistent
-          interaction styling across the LifeNote interface.
+          interaction styling across LifeNote.
         </p>
       </div>
     </section>
@@ -44,9 +42,9 @@
         <aside class="sidebar">
           <h3>Foundations</h3>
           <a class="active-link" href="foundation-guidelines.html">Color</a>
-          <a href="#">Typography</a>
-          <a href="#">Spacing</a>
-          <a href="#">Icons</a>
+          <a href="typography.html">Typography</a>
+          <a href="spacing.html">Spacing</a>
+          <a href="icons.html">Icons</a>
         </aside>
 
         <div class="main-content">
@@ -73,18 +71,22 @@
                 <li>Use primary blue for the main action in a section.</li>
                 <li>Use accent purple sparingly for emphasis.</li>
                 <li>Maintain strong contrast between text and background.</li>
-                <li>Use surface and background colors consistently.</li>
                 <li>Avoid introducing colors outside the system.</li>
               </ul>
             </article>
 
-            <article class="content-card code-card">
-              <h3>Usage Example</h3>
-              <img
-                src="images/color-palette.png"
-                alt="LifeNote color palette"
-                class="guideline-image"
-              />
+            <article class="content-card full-span">
+              <h3>Color Palette</h3>
+              <div class="color-demo-grid">
+                <div class="color-demo primary-demo">Primary<br />#4c6ef5</div>
+                <div class="color-demo hover-demo-color">
+                  Primary Hover<br />#3b5bdb
+                </div>
+                <div class="color-demo accent-demo">Accent<br />#9b7cf3</div>
+                <div class="color-demo bg-demo">Background<br />#dbe6d7</div>
+                <div class="color-demo surface-demo">Surface<br />#ffffff</div>
+                <div class="color-demo muted-demo">Muted Text<br />#667085</div>
+              </div>
             </article>
 
             <article class="content-card">
@@ -94,24 +96,15 @@
                 readability, and keeps the interface feeling calm and
                 consistent.
               </p>
-              <p>
-                The palette is intentionally limited so actions, content, and
-                layout areas feel connected across the experience.
-              </p>
             </article>
 
             <article class="content-card">
               <h3>Applied in Interface</h3>
-              <p>
-                The color system is applied across reusable button styles to
-                reinforce interaction hierarchy and create a consistent visual
-                language throughout the product.
-              </p>
-              <img
-                src="images/button-usage.png"
-                alt="LifeNote button color usage"
-                class="guideline-image"
-              />
+              <div class="button-demo-row">
+                <button class="btn btn-primary">New Entry</button>
+                <button class="btn btn-secondary">Cancel</button>
+                <button class="btn btn-accent">Insight</button>
+              </div>
             </article>
           </div>
         </div>

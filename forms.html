@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LifeNote Design System | Cards</title>
+    <title>LifeNote Design System | Forms</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -30,11 +30,11 @@
 
     <section class="hero hero-small">
       <div class="hero-content">
-        <p class="eyebrow">Components</p>
-        <h1>Cards</h1>
+        <p class="eyebrow">Patterns</p>
+        <h1>Forms</h1>
         <p>
-          Reusable content containers used to group related information and
-          actions across LifeNote.
+          Form patterns combine labels, inputs, helper text, and buttons into
+          clear user flows.
         </p>
       </div>
     </section>
@@ -42,11 +42,10 @@
     <section class="content-section">
       <div class="page-width button-layout">
         <aside class="sidebar">
-          <h3>Components</h3>
-          <a href="buttons.html">Buttons</a>
-          <a class="active-link" href="component-guidelines.html">Cards</a>
-          <a href="inputs.html">Inputs</a>
-          <a href="navigation.html">Navigation</a>
+          <h3>Patterns</h3>
+          <a class="active-link" href="forms.html">Forms</a>
+          <a href="navigation-patterns.html">Navigation Patterns</a>
+          <a href="content-layouts.html">Content Layouts</a>
         </aside>
 
         <div class="main-content">
@@ -56,49 +55,64 @@
             <article class="content-card">
               <h3>Structure</h3>
               <ul>
-                <li>Optional label</li>
-                <li>Title</li>
-                <li>Supporting text</li>
-                <li>Optional action button</li>
-                <li>Consistent padding and spacing</li>
+                <li>Section title</li>
+                <li>Grouped input fields</li>
+                <li>Helper or error text</li>
+                <li>Primary submit action</li>
+                <li>Secondary cancel action</li>
               </ul>
             </article>
 
             <article class="content-card">
               <h3>Best Practices</h3>
               <ul>
-                <li>Keep card content short and scannable.</li>
-                <li>Use clear hierarchy from title to action.</li>
-                <li>Avoid overcrowding cards with too much content.</li>
+                <li>Group related fields together.</li>
+                <li>Use one primary action per form.</li>
+                <li>Keep labels visible.</li>
+                <li>Provide clear feedback when something is missing.</li>
               </ul>
             </article>
 
             <article class="content-card full-span">
-              <h3>Card Example</h3>
-              <div class="prompt-card">
-                <span class="prompt-label">Daily Reflection</span>
-                <h3>What stood out today?</h3>
-                <p>
-                  Capture a quick thought and let LifeNote organize your
-                  reflection into a meaningful journal entry.
-                </p>
-                <button class="btn btn-primary">Start Entry</button>
-              </div>
+              <h3>Form Pattern Example</h3>
+              <form class="form-demo">
+                <label for="mood">Mood</label>
+                <input
+                  id="mood"
+                  type="text"
+                  placeholder="How are you feeling?"
+                />
+
+                <label for="reflection">Reflection</label>
+                <textarea
+                  id="reflection"
+                  placeholder="Write a short reflection"
+                ></textarea>
+
+                <div class="button-demo-row">
+                  <button class="btn btn-primary" type="button">
+                    Save Entry
+                  </button>
+                  <button class="btn btn-secondary" type="button">
+                    Cancel
+                  </button>
+                </div>
+              </form>
             </article>
 
             <article class="content-card">
               <h3>Purpose</h3>
               <p>
-                Cards group related content such as journal entries,
-                reflections, and insights into clean reusable blocks.
+                Forms help users submit journal entries, update settings, and
+                complete structured tasks.
               </p>
             </article>
 
             <article class="content-card">
-              <h3>Usage</h3>
+              <h3>Accessibility</h3>
               <p>
-                Use cards when content needs a clear container, supporting text,
-                and an optional action.
+                Forms should use labels, readable error states, and
+                keyboard-friendly controls.
               </p>
             </article>
           </div>

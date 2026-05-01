@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LifeNote Design System | Cards</title>
+    <title>LifeNote Design System | Inputs</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -31,10 +31,10 @@
     <section class="hero hero-small">
       <div class="hero-content">
         <p class="eyebrow">Components</p>
-        <h1>Cards</h1>
+        <h1>Inputs</h1>
         <p>
-          Reusable content containers used to group related information and
-          actions across LifeNote.
+          Input fields help users write, search, and submit information clearly
+          across LifeNote.
         </p>
       </div>
     </section>
@@ -44,8 +44,8 @@
         <aside class="sidebar">
           <h3>Components</h3>
           <a href="buttons.html">Buttons</a>
-          <a class="active-link" href="component-guidelines.html">Cards</a>
-          <a href="inputs.html">Inputs</a>
+          <a href="component-guidelines.html">Cards</a>
+          <a class="active-link" href="inputs.html">Inputs</a>
           <a href="navigation.html">Navigation</a>
         </aside>
 
@@ -56,49 +56,63 @@
             <article class="content-card">
               <h3>Structure</h3>
               <ul>
-                <li>Optional label</li>
-                <li>Title</li>
-                <li>Supporting text</li>
-                <li>Optional action button</li>
-                <li>Consistent padding and spacing</li>
+                <li>Label</li>
+                <li>Input field</li>
+                <li>Placeholder text</li>
+                <li>Optional helper text</li>
+                <li>Error or disabled state</li>
               </ul>
             </article>
 
             <article class="content-card">
               <h3>Best Practices</h3>
               <ul>
-                <li>Keep card content short and scannable.</li>
-                <li>Use clear hierarchy from title to action.</li>
-                <li>Avoid overcrowding cards with too much content.</li>
+                <li>Always use visible labels.</li>
+                <li>Keep placeholder text short.</li>
+                <li>Use helper text when the user needs extra context.</li>
+                <li>Show clear error feedback.</li>
               </ul>
             </article>
 
             <article class="content-card full-span">
-              <h3>Card Example</h3>
-              <div class="prompt-card">
-                <span class="prompt-label">Daily Reflection</span>
-                <h3>What stood out today?</h3>
-                <p>
-                  Capture a quick thought and let LifeNote organize your
-                  reflection into a meaningful journal entry.
-                </p>
-                <button class="btn btn-primary">Start Entry</button>
+              <h3>Input Examples</h3>
+              <div class="form-demo">
+                <label for="entry-title">Entry Title</label>
+                <input
+                  id="entry-title"
+                  type="text"
+                  placeholder="Name your reflection"
+                />
+
+                <label for="entry-search">Search Entries</label>
+                <input
+                  id="entry-search"
+                  type="search"
+                  placeholder="Search by keyword"
+                />
+
+                <label for="entry-note">Journal Prompt</label>
+                <textarea
+                  id="entry-note"
+                  placeholder="What are you reflecting on today?"
+                ></textarea>
               </div>
             </article>
 
             <article class="content-card">
               <h3>Purpose</h3>
               <p>
-                Cards group related content such as journal entries,
-                reflections, and insights into clean reusable blocks.
+                Inputs allow users to create journal content, search past
+                entries, and provide information in a structured way.
               </p>
             </article>
 
             <article class="content-card">
-              <h3>Usage</h3>
+              <h3>Accessibility</h3>
               <p>
-                Use cards when content needs a clear container, supporting text,
-                and an optional action.
+                Labels should be connected to inputs using the
+                <code>for</code> and <code>id</code> attributes for better
+                accessibility.
               </p>
             </article>
           </div>

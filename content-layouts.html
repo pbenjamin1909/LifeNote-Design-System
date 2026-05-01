@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LifeNote Design System | Cards</title>
+    <title>LifeNote Design System | Content Layouts</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -30,11 +30,11 @@
 
     <section class="hero hero-small">
       <div class="hero-content">
-        <p class="eyebrow">Components</p>
-        <h1>Cards</h1>
+        <p class="eyebrow">Patterns</p>
+        <h1>Content Layouts</h1>
         <p>
-          Reusable content containers used to group related information and
-          actions across LifeNote.
+          Content layout patterns organize cards, sections, and supporting text
+          into readable page structures.
         </p>
       </div>
     </section>
@@ -42,11 +42,10 @@
     <section class="content-section">
       <div class="page-width button-layout">
         <aside class="sidebar">
-          <h3>Components</h3>
-          <a href="buttons.html">Buttons</a>
-          <a class="active-link" href="component-guidelines.html">Cards</a>
-          <a href="inputs.html">Inputs</a>
-          <a href="navigation.html">Navigation</a>
+          <h3>Patterns</h3>
+          <a href="forms.html">Forms</a>
+          <a href="navigation-patterns.html">Navigation Patterns</a>
+          <a class="active-link" href="content-layouts.html">Content Layouts</a>
         </aside>
 
         <div class="main-content">
@@ -54,51 +53,50 @@
 
           <div class="button-grid">
             <article class="content-card">
-              <h3>Structure</h3>
+              <h3>Layout Types</h3>
               <ul>
-                <li>Optional label</li>
-                <li>Title</li>
-                <li>Supporting text</li>
-                <li>Optional action button</li>
-                <li>Consistent padding and spacing</li>
+                <li>Single-column content</li>
+                <li>Two-column content sections</li>
+                <li>Card grids</li>
+                <li>Hero plus supporting content</li>
               </ul>
             </article>
 
             <article class="content-card">
               <h3>Best Practices</h3>
               <ul>
-                <li>Keep card content short and scannable.</li>
-                <li>Use clear hierarchy from title to action.</li>
-                <li>Avoid overcrowding cards with too much content.</li>
+                <li>Use grids for related content groups.</li>
+                <li>Keep reading areas focused.</li>
+                <li>Use consistent spacing between sections.</li>
+                <li>Stack layouts on smaller screens.</li>
               </ul>
             </article>
 
             <article class="content-card full-span">
-              <h3>Card Example</h3>
-              <div class="prompt-card">
-                <span class="prompt-label">Daily Reflection</span>
-                <h3>What stood out today?</h3>
-                <p>
-                  Capture a quick thought and let LifeNote organize your
-                  reflection into a meaningful journal entry.
-                </p>
-                <button class="btn btn-primary">Start Entry</button>
+              <h3>Layout Example</h3>
+              <div class="layout-demo">
+                <div class="layout-hero-box">Hero / Main Message</div>
+                <div class="layout-card-row">
+                  <div>Insight Card</div>
+                  <div>Journal Card</div>
+                  <div>Prompt Card</div>
+                </div>
               </div>
             </article>
 
             <article class="content-card">
               <h3>Purpose</h3>
               <p>
-                Cards group related content such as journal entries,
-                reflections, and insights into clean reusable blocks.
+                Content layouts create structure so users can scan and
+                understand LifeNote content quickly.
               </p>
             </article>
 
             <article class="content-card">
-              <h3>Usage</h3>
+              <h3>Responsive Behavior</h3>
               <p>
-                Use cards when content needs a clear container, supporting text,
-                and an optional action.
+                Grid layouts should collapse into one column on mobile to keep
+                content readable.
               </p>
             </article>
           </div>
