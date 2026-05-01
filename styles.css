@@ -929,5 +929,32 @@ h2 {
   .code-block {
     font-size: 12px;
   }
+  /* =========================
+   Input States (Error)
+========================= */
+
+.input-error {
+  border: 1px solid #ef4444;
+  background: #fff5f5;
+}
+
+.input-error:focus {
+  outline: none;
+  border-color: #dc2626;
+  box-shadow: 0 0 0 2px rgba(239, 68, 68, 0.2);
+}
+
+.error-text {
+  font-size: 13px;
+  color: #dc2626;
+  margin-top: 6px;
+  display: block;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
 }
 
